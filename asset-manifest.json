@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/study-ReactJS-basic/movie-app/static/js/main.72118ca4.js",
-    "index.html": "/study-ReactJS-basic/movie-app/index.html",
-    "main.72118ca4.js.map": "/study-ReactJS-basic/movie-app/static/js/main.72118ca4.js.map"
+    "main.js": "/study-ReactJS-basic/static/js/main.72118ca4.js",
+    "index.html": "/study-ReactJS-basic/index.html",
+    "main.72118ca4.js.map": "/study-ReactJS-basic/static/js/main.72118ca4.js.map"
   },
   "entrypoints": [
     "static/js/main.72118ca4.js"
