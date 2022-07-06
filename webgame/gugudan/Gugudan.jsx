@@ -21,16 +21,24 @@ class Gugudan extends Component {
           value: "",
         };
       });
+      this.input.focus();
     } else {
       this.setState({
         result: "땡",
         value: "",
       });
+      this.input.focus();
     }
   };
 
   onChange = (e) => {
     this.setState({ value: e.target.value });
+  };
+
+  input;
+
+  onRefInput = (c) => {
+    this.input = c;
   };
 
   render() {
@@ -41,7 +49,7 @@ class Gugudan extends Component {
           {first} 곱하기 {second} 은?
         </h1>
         <form onSubmit={this.onSubmit}>
-          <input type="number" value={value} onChange={this.onChange} />
+          <input type="number" ref={this.onRefInput} value={value} onChange={this.onChange} />
           <button>입력</button>
         </form>
         <div>{result}</div>
