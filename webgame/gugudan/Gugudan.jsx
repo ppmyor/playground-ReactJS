@@ -11,7 +11,8 @@ class Gugudan extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
-    if (parseInt(this.state.value) === this.state.first * this.state.second) {
+    const { first, second, value } = this.state;
+    if (parseInt(value) === first * second) {
       this.setState((prevState) => {
         return {
           result: "정답: " + prevState.value,
@@ -33,16 +34,17 @@ class Gugudan extends Component {
   };
 
   render() {
+    const { first, second, value, result } = this.state;
     return (
       <>
         <h1>
-          {this.state.first} 곱하기 {this.state.second} 은?
+          {first} 곱하기 {second} 은?
         </h1>
         <form onSubmit={this.onSubmit}>
-          <input type="number" value={this.state.value} onChange={this.onChange} />
+          <input type="number" value={value} onChange={this.onChange} />
           <button>입력</button>
         </form>
-        <div>{this.state.result}</div>
+        <div>{result}</div>
       </>
     );
   }
