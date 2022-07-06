@@ -1,6 +1,6 @@
-const React = require("react");
-const ReactDOM = require("react-dom");
+import React from "react";
+import ReactDOM from "react-dom";
 
-const Gugudan = require("./Gugudan");
+import Gugudan from "./Gugudan";
 
 ReactDOM.render(<Gugudan />, document.querySelector("#root"));
